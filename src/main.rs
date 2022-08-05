@@ -1,24 +1,9 @@
-#[derive(Debug)]
-
-
-struct Node {
-    value: i32,
-    next: Option<Box<Node>>,
+fn change(num: &mut i32) {
+    *num = 3;
 }
-fn main() {
-    // TODO: create me!
-    let mut a = 10;
-    let b = &mut a;
 
-    *b = 100;
-    
-    let data = Node {
-        value: 1,
-        next: Some(Box::new(Node {
-            value: 2,
-            next: None,
-        })),
-    };
-    print!("{}",b);
-    print!("{:?}", data.next.unwrap().value);
+fn main() {
+    let mut num = 10;
+    change(&mut num);
+    println!("{:?}", num);
 }
