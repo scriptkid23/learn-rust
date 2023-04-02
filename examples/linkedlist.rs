@@ -25,5 +25,5 @@ impl<T> LinkedList<T> {
 }
 fn main() {
     let list = LinkedList::new().append(3).append(4).append(10);
-    println!("{:?}",list.head.unwrap().next.as_ref().unwrap().data)
+    println!("{:?}",list)
 }
