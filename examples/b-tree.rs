@@ -1,9 +1,9 @@
-use std::rc::Rc;
 
 #[derive(Debug)]
 struct LinkedList {
     head: Option<Box<Node>>,
 }
+
 #[derive(Debug, Clone)]
 struct Node {
     value: i32,
